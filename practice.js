@@ -16,7 +16,11 @@
 
 //Code here
 
-
+var me = {
+  name: "Michael",
+  age: 25
+};
+alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+    band: "Massive Attack",
+    food: "Pizza",
+    person: "My girlfriend",
+    book: "Where's Waldo",
+    movie: "Inception",
+    holiday: "Christmas"
+};
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Nissan GTR";
+favoriteThings.brand = "Lamborghini";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -57,7 +70,13 @@
 
 //Code here
 
+var backPack ={
 
+};
+var item = "firstPocket";
+backPack['item'];
+backPack['firstPocket'] = "chapstick";
+backPack.color = "Black";
 
 /*
   After you do the above, alert your entire backPack object.
@@ -65,7 +84,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -97,7 +116,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,7 +130,9 @@ var user2 = {
 
 //Code Here
 
+var methodCollection = {
 
+};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -119,6 +141,8 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello = function(){alert("hello")};
+methodCollection.logHello = function(){console.log("hello")};
 
 
 /*
@@ -127,6 +151,8 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -138,7 +164,9 @@ var user2 = {
 
 //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  return {name:name,birthday:birthday,ssn:ssn};
+};
 
 ////////// PROBLEM 7 //////////
 
@@ -149,4 +177,7 @@ var user2 = {
 
 //Code Here
 
+function makeCard (cardNumber, expirationDate, securityCode){
+  return {cardNumber:cardNumber, expirationDate:expirationDate, securityCode:securityCode};
+};
 
